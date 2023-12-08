@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style_cad.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <a href="../index.html">
+        <div class="logotipo">
+            <p>a
+                <div class="code">code</div>my</p>
+        </div>
+    </a>
+
+    <main>
+        <div class="container-main">
+            <h1>Cadastro</h1>
+            <p>Preencha os campos abaixo para criar sua conta na Acodemy</p>
+
+            <form action="../php/cadastro.php" method="post">
+                <label for="nome_estudante">Nome completo</label>
+                <input type="text" name="nome_estudante" id="nome" class="custom-input" placeholder="Ex.: Manuela Rocha">
+
+                <label for="email_estudante">E-mail institucional</label>
+                <input type="email" name="email_estudante" id="email" class="custom-input" placeholder="Name@aluno.ifsp.edu.br">
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" class="custom-input" id="senha">
+
+                <label for="confirmar_senha">Confirme sua senha</label>
+                <input type="password" name="confirmar_senha" class="custom-input" id="confirmar_senha">
+
+                <input type="submit" value="Prosseguir">
+                <p class="link-register">Já possui uma conta? <a href="login.html">Entre aqui.</a></p>
+            </form>
+            <script src="../scripts/script.js"></script>
+        </div>
+    </main>
+</body>
+
+</html>

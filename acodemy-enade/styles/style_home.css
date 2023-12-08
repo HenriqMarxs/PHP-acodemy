@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #007BFF;
+    --turquoise: #11D1D4;
+    --salmon: #FF6F61;
+    --black: #1F1F1F;
+    --white: #FFF;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Adiciona a rolagem suave para todos os elementos */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+p {
+    text-align: justify;
+}
+
+.header .title h1 {
+    color: var(--black);
+    font-family: Sora;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 8%;
+}
+
+.navbar a {
+    color: var(--black);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.navbar .links a:hover {
+    color: var(--blue);
+}
+
+.navbar .links {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .logotipo {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Sora;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .logotipo .code {
+    color: var(--blue);
+}
+
+.navbar .buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.navbar .buttons a {
+    padding: 8px 32px;
+    background-color: var(--blue);
+    font-family: Poppins;
+    font-size: 14px;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#deactivate {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.navbar .buttons a:hover,
+#deactivate:hover {
+    background-color: #005fc4;
+    border-color: #005fc4;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 65px;
+    padding: 160px;
+}
+
+.header .img {
+    width: 50%;
+    height: auto;
+    margin-left: -50px;
+}
+
+.header .title h3 {
+    color: #1F1F1F;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    margin-top: 32px;
+}
+
+main {
+    padding: 0 8%;
+}
+
+main .top-topic,
+main .center-topics,
+main .bottom-topic {
+    display: flex;
+    flex-direction: row;
+}
+
+main .top-topic,
+main .bottom-topic {
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px
+}
+
+main .top-topic h2,
+main .center-topics h2,
+main .bottom-topic h2 {
+    color: #1F1F1F;
+    text-align: justify;
+    font-family: Sora;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+main .center-topics {
+    gap: 70px;
+    align-items: start;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+main .center-topics .item {
+    flex-wrap: wrap;
+    flex: 1 30%
+}
+
+main .bottom-topic {
+    margin-bottom: 100px;
+}
+
+hr {
+    border: 3px solid;
+    margin-bottom: 20px;
+}
+
+.text-topic {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10px;
+    gap: 12px;
+}
+
+.number-topic {
+    font-size: 26px;
+    text-align: center;
+    width: 60px;
+    font-family: 'Sora', sans-serif;
+}
+
+#blue {
+    border-color: var(--blue);
+}
+
+#turquesa {
+    border-color: var(--turquoise);
+}
+
+#salmon {
+    border-color: var(--salmon);
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+    z-index: -1;
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 0px;
+    border: 1px solid transparent;
+    z-index: -1;
+}
+
+
+/* adicionando responsividade */
+@media screen and (max-width: 1300px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 65px;
+        padding: 0 8%;
+    }
+
+    .header .img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .header .title h3 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+
+    main .top-topic,
+    main .center-topics,
+    main .bottom-topic {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .top-topic,
+    main .bottom-topic {
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px
+    }
+
+    .header .img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+
+/* tudo do footer tá aqui */
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    width: auto;
+    height: auto;
+    padding: 4% 8%;
+    gap: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer hr {
+    border: 1px solid var(--white);
+}
+
+.footer p {
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer .infos {
+    width: 60%;
+}
+
+.footer .adress {
+    width: 40%;
+}
+
+.footer .infos a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7px;
+}
+
+.footer .infos a img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .logotipo {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: Sora;
+    margin-bottom: 20px;
+}
+
+.footer .text {
+    margin-bottom: 30px;
+}
+
+#social-media {
+    color: #FFF;
+    font-family: Sora;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.custom-input {
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+    outline: none;
+
+    font-family: Poppins;
+    width: 90%;
+    height: 110px;
+    padding: 4% 5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    transition: .5s;
+}
+
+.custom-input:focus {
+    border: 1px solid #005fc4;
+}
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+input[type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--blue);
+    font-family: Poppins;
+    font-size: 12px;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    width: 100%;
+    margin-top: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #005fc4;
+    border-color: #005fc4;
+    color: #fff;
+}
+
+.footer .adress p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        padding: 8%;
+    }
+
+    .footer .infos,
+    .footer .adress {
+        width: 100%;
+    }
+
+    .footer hr {
+        margin: 40px 0;
+    }
+}
+
+.member-social-media p {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.media-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member-social-media {
+    flex: 1 0 25%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    .member-social-media {
+        flex: 1 0 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .member-social-media {
+        flex: 1 0 100%;
+    }
+}
+
+
+
+
+
+/* teste que talvez dê bem ruim */
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #333;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 16px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 16px;
+  transition: 0.3s;
+}
+
+.content h1 {
+  margin-top: 0;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

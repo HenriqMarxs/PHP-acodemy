@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Home</title>
+
+    <style>
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 1);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logotipo">
+            <p>a
+            <div class="code">code</div>my</p>
+        </div>
+        <div class="links">
+            <a href="#sobre">Sobre o Enade</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#conteudo">Conteúdo do curso</a>
+            <a href="#desenvolvimento">Sobre o desenvolvimento</a>
+        </div>
+        <div class="buttons">
+            <a href="html/cadastro.html" id="deactivate">Cadastre-se</a>
+            <a href="html/login.html">Entrar</a>
+        </div>
+    </nav>
+<!--
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    -->
+    <header class="header">
+        <img src="images/bubbles.png" alt="" class="img">
+        <div class="title">
+            <h1>Bem-vindo à <b>Acodemy</b>, sua plataforma de preparação para o Enade!</h1>
+            <h3>Aprimore sua jornada de conhecimento na área de Tecnologia em Análise
+                e Desenvolvimento de Sistemas</h3>
+        </div>
+    </header>
+    <main>
+        <section class="top-topic" id="sobre">
+            <div class="text">
+                <h2>Conheça o Enade</h2>
+                <p>O Exame Nacional de Desempenho dos Estudantes (ENADE) é uma avaliação
+                    do Ministério da Educação que mede o desempenho dos estudantes em relação
+                    aos conteúdos programáticos dos cursos de graduação. Seu resultado é crucial
+                    para avaliar a qualidade do curso e da instituição de ensino.</p>
+            </div>
+            <img src="images/students-group.png" alt="" width="50%" height="auto">
+        </section>
+        <section class="center-topics" id="objetivos">
+            <div class="item">
+                <h2>Nossos Objetivos</h2>
+                <hr id="blue">
+                <p>Nossa plataforma foi desenvolvida com dois objetivos principais:</p>
+                <div class="text-topic">
+                    <div class="row">
+                        <p class="number-topic">1</p>
+                        <p>Preparar os estudantes para obterem um desempenho excepcional no ENADE.</p>
+                    </div>
+                    <div class="row">
+                        <p class="number-topic">2</p>
+                        <p>Fornecer materiais de estudo e suporte para ajudá-los a alcançar essa meta.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <h2>Público-Alvo</h2>
+                <hr id="turquesa">
+                <p>Nossa plataforma é dedicada a todos os estudantes matriculados no curso de
+                    Tecnologia em Análise e Desenvolvimento de Sistemas que buscam se destacar no ENADE.</p>
+            </div>
+            <div class="item">
+                <h2>Metodologia de Estudo</h2>
+                <hr id="salmon">
+                <p>Nossa abordagem combina teoria e prática, enfatizando a resolução de problemas
+                    reais e a aplicação dos conceitos aprendidos no curso.</p>
+            </div>
+        </section>
+        <section class="bottom-topic" id="conteudo">
+            <img src="images/languages-group.png" alt="" width="40%" height="auto">
+            <div class="text">
+                <h2>Sobre a Graduação em ADS</h2>
+                <p>O curso de Tecnologia em Análise e Desenvolvimento de Sistemas é uma formação abrangente
+                    que engloba uma variedade de disciplinas essenciais para a formação de profissionais na
+                    área de tecnologia da informação. Inclui uma sólida base em programação, proporcionando
+                    aos estudantes a capacidade de desenvolver soluções de software inovadoras e eficientes.
+                    Além disso, o curso explora a fundo o mundo dos bancos de dados, permitindo aos alunos
+                    a compreensão e manipulação eficaz de conjuntos de dados complexos.</p><br>
+
+                <p>Adicionalmente, o programa também se concentra no desenvolvimento web, preparando os
+                    alunos para criar e aprimorar aplicações web modernas e responsivas. Tópicos como design
+                    de interfaces, segurança digital e boas práticas de desenvolvimento também são abordados
+                    de forma abrangente.</p><br>
+
+                <p>Ao longo do curso, os alunos têm a oportunidade de aplicar seus conhecimentos em
+                    projetos práticos e colaborativos, fornecendo experiência valiosa no mundo real. Com
+                    uma ênfase na inovação e na resolução de problemas, os formandos estarão preparados
+                    para enfrentar os desafios dinâmicos e em constante evolução do setor de tecnologia.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="desenvolvimento">
+        <div class="infos">
+            <div class="logotipo">acodemy</div>
+            <p class="text">A plataforma foi desenvolvida por nós, estudantes do curso de ADS do IFSP Campus Hortolândia,
+                no ano de 2023. Nossa equipe foi formada por Manuela, Jenifer, Henrique e Eduardo. Com dedicação
+                e colaboração, unimos nossos esforços para criar uma solução que reflete nosso compromisso com
+                a excelência educacional e o avanço tecnológico. O resultado é uma plataforma que promete oferecer
+                uma boa experiência aos usuários</p>
+
+            <h2 id="social-media">Nossas redes sociais</h2>
+
+            <div class="media-links">
+                <div class="member-social-media">
+                    <p>Manuela Rocha</p>
+                    <a href="https://github.com/rochamanuela" class="link-social-media">
+                        <img src="images/icons/bi_github.png" alt="">
+                        rochamanuela
+                    </a>
+                    <a href="https://www.instagram.com/manuela_rocha__/" class="link-social-media">
+                        <img src="images/icons/formkit_instagram.png" alt="">
+                        manuela_rocha__
+                    </a>
+                </div>
+                <div class="member-social-media">
+                    <p>Jennifer Costa</p>
+                    <a href="https://github.com/j3nni3-c0sta" class="link-social-media">
+                        <img src="images/icons/bi_github.png" alt="">
+                        j3nni3-c0sta
+                    </a>
+                    <a href="https://www.instagram.com/j3nni3_c0sta/" class="link-social-media">
+                        <img src="images/icons/formkit_instagram.png" alt="">
+                        j3nni3_c0sta
+                    </a>
+                </div>
+                <div class="member-social-media">
+                    <p>Henrique Marques</p>
+                    <a href="https://github.com/HenriqMarxs" class="link-social-media">
+                        <img src="images/icons/bi_github.png" alt="">
+                        HenriqMarxs
+                    </a>
+                    <a href="https://www.instagram.com/henriqmarxs" class="link-social-media">
+                        <img src="images/icons/formkit_instagram.png" alt="">
+                        henriqmarxs
+                    </a>
+                </div>
+                <div class="member-social-media">
+                    <p>Eduardo Leoncio</p>
+                    <a href="https://github.com/EduardoLeoncio" class="link-social-media">
+                        <img src="images/icons/bi_github.png" alt="">
+                        EduardoLeoncio
+                    </a>
+                    <a href="https://www.instagram.com/eduardo__pepe/" class="link-social-media">
+                        <img src="images/icons/formkit_instagram.png" alt="">
+                        eduardo__pepe
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="adress">
+            <img src="images/icons/logo_ifsp.png" alt="">
+            <p>Av. Thereza Ana Cecon Breda, 1896 - Vila São Pedro, Hortolândia - SP, 13183-250</p>
+            <form action="">
+                <textarea placeholder="Gostaria de entrar em contato com o IFSP? Escreva sua mensagem aqui..." class="custom-input"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
